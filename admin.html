@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Add products</title>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+  	<script type="text/javascript" src="js/login.js"></script>
+  	<link href="css/bootstrap.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+<!-- Default form contact -->
+<form class="text-center border border-light p-5" action="api/api.php" method="POST" enctype="multipart/form-data">
+
+    <p class="h4 mb-4">Add Sneaker</p>
+
+    <!-- Name -->
+    <input type="text" name="sneakerName" class="form-control mb-4" placeholder="Sneaker Name">
+
+    <input type="text" name="sneakerBrand" class="form-control mb-4" placeholder="Brand">
+
+    <input type="text" name="sneakerPrice" class="form-control mb-4" placeholder="Price">
+
+    <!-- Subject -->
+    <!-- <label>Subject</label>
+    <select class="browser-default custom-select mb-4">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>Feedback</option>
+        <option value="2">Report a bug</option>
+        <option value="3">Feature request</option>
+        <option value="4">Feature request</option>
+    </select> -->
+
+    <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" name="sneakerDescription" rows="3" placeholder="Sneaker description"></textarea>
+    </div>
+
+    <input type="file" name="sneakerImage" style="margin-bottom: 10px;">
+
+    <!-- Send button -->
+    <button class="btn btn-info btn-block" type="submit" name="sneakerSubmit">Add</button>
+
+</form>
+<!-- Default form contact -->
+
+
+</body>
+</html>
